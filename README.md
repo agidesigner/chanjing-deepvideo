@@ -7,6 +7,8 @@
 
 [下载最新版 / Download Latest](https://github.com/agidesigner/chanjing-deepvideo/releases/latest) · [中文](#中文) · [English](#english)
 
+**最新版本 / Latest: [v1.5.1](https://github.com/agidesigner/chanjing-deepvideo/releases/tag/v1.5.1)**
+
 </div>
 
 > 此仓库仅发布安装包和版本说明，不包含应用源代码。  
@@ -123,4 +125,3 @@ For more AI video creation tools, visit [JoggAI](https://jogg.ai/?source=deepvid
 ### Technology and Distribution Notice
 
 Depth estimation is powered by [Video Depth Anything](https://github.com/DepthAnything/Video-Depth-Anything). Third-party components and models remain subject to their respective licenses. The DeepVideo application is distributed as proprietary software; downloading or using the installer does not grant access to its source code.
-
