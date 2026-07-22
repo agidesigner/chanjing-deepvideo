@@ -9,6 +9,35 @@
 
 **最新版本 / Latest: [v1.5.1](https://github.com/agidesigner/chanjing-deepvideo/releases/tag/v1.5.1)**
 
+<h2>Before / After · 效果预览</h2>
+
+<p><strong>原视频 / Source Video → 时序一致深度视频 / Temporally Consistent Depth Video</strong></p>
+
+<table>
+  <tr>
+    <th width="50%">Before · 原视频</th>
+    <th width="50%">After · 深度视频</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="./media/deepvideo-before.mp4?raw=1">
+        <img src="./media/deepvideo-before.jpg" alt="Before：团播舞蹈原视频 / Source video" width="360">
+      </a>
+    </td>
+    <td align="center">
+      <a href="./media/deepvideo-after-depth.mp4?raw=1">
+        <img src="./media/deepvideo-after-depth.jpg" alt="After：团播舞蹈深度视频 / Depth video" width="360">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><a href="./media/deepvideo-before.mp4?raw=1"><strong>▶ 播放原视频 / Play Before</strong></a></td>
+    <td align="center"><a href="./media/deepvideo-after-depth.mp4?raw=1"><strong>▶ 播放深度视频 / Play After</strong></a></td>
+  </tr>
+</table>
+
+<p><sub>点击预览图或播放按钮查看完整 9 秒视频。<br>Click a preview or play button to watch the full 9-second video.</sub></p>
+
 </div>
 
 > 此仓库仅发布安装包和版本说明，不包含应用源代码。  
