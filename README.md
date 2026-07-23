@@ -2,7 +2,7 @@
 
 # JoggAI DeepVideo
 
-**Turn regular footage into temporally consistent depth video — locally on your Mac**
+**Turn regular footage into temporally consistent depth video — locally on macOS and Windows**
 
 **English** · [简体中文](./README_CN.md)
 
@@ -37,20 +37,23 @@
 
 ## Download
 
-- **macOS (Apple Silicon)**: [Download the latest DMG from GitHub Releases](https://github.com/agidesigner/chanjing-deepvideo/releases/latest)
-- **Windows**: In development. The installer will be published in this repository when it is ready.
+- **macOS · Apple Silicon**: [Download DMG](https://github.com/agidesigner/chanjing-deepvideo/releases/download/v1.5.1/Chanjing-DeepVideo-1.5.1-arm64.dmg)
+- **Windows · CPU edition**: [Download CPU installer](https://github.com/agidesigner/chanjing-deepvideo/releases/download/v1.5.1/JoggAI-DeepVideo-1.5.1-Windows-x64-CPU-Setup.exe) — smaller download; works on supported x64 PCs.
+- **Windows · NVIDIA GPU edition**: [Download CUDA installer](https://github.com/agidesigner/chanjing-deepvideo/releases/download/v1.5.1/JoggAI-DeepVideo-1.5.1-Windows-x64-Setup.exe) — recommended for a supported NVIDIA GPU with a current driver.
 
-JoggAI DeepVideo is a local video-depth tool for creators. It estimates depth frame by frame on your Mac and produces a colorized depth video with consistent motion over time. The Small model is bundled with the application, so no separate model download or Python setup is required after installation.
+Choose one Windows installer. The CPU edition is about 245 MB; the NVIDIA edition is about 1.46 GB and also falls back to CPU when CUDA is unavailable.
+
+JoggAI DeepVideo is a local video-depth tool for creators. It estimates depth frame by frame on your computer and produces a colorized depth video with consistent motion over time. The Small model is bundled with the application, so no separate model download or Python setup is required after installation.
 
 ## Features
 
-- **Local AI processing**: Input videos and generated files stay on your Mac and are not uploaded to the cloud.
+- **Local AI processing**: Input videos and generated files stay on your computer and are not uploaded to the cloud.
 - **Temporally consistent depth**: Reduces frame-to-frame flicker for continuous footage.
 - **Bundled model**: No Python, Conda, command line, or additional model download is required.
 - **Detailed progress**: See the current stage, processed frames, percentage, elapsed time, and estimated time remaining.
 - **In-app preview**: Play the generated depth video and open its output folder in one click.
 - **Bilingual interface**: Simplified Chinese on Chinese systems and English for all other system languages.
-- **Update notifications**: Get a download shortcut when a new release is available, or check manually from the macOS application menu.
+- **Update notifications**: Get a download shortcut when a new release is available, or check manually from the application menu.
 
 ## Use Cases
 
@@ -64,23 +67,35 @@ JoggAI DeepVideo is a local video-depth tool for creators. It estimates depth fr
 
 ## Requirements
 
-- Apple Silicon Mac with an M1 chip or newer
-- macOS 12.3 or later
+- **macOS**: Apple Silicon Mac with an M1 chip or newer; macOS 12.3 or later
+- **Windows**: Windows 10 version 2004 or later; 64-bit x86 PC (Windows ARM is not supported)
+- **GPU edition**: A current NVIDIA driver is recommended; otherwise use the smaller CPU edition
 - 8 GB memory minimum recommended; 16 GB or more recommended for High Quality mode
 - Common MP4, MOV, M4V, AVI, and MKV inputs (H.264 MP4/MOV recommended)
 
 ## Install and Use
 
-1. Download the `.dmg` from [Releases](https://github.com/agidesigner/chanjing-deepvideo/releases/latest).
-2. Open the DMG and drag “JoggAI DeepVideo” to Applications.
-3. If macOS displays a security warning on first launch, Control-click the app in Finder and choose Open.
-4. Choose an input video and output folder, select the quality, and start processing.
-5. Preview the result in the app or choose Open Output Folder.
+### macOS
+
+1. Download the DMG and drag “JoggAI DeepVideo” to Applications.
+2. If macOS displays a security warning on first launch, Control-click the app in Finder and choose Open.
+
+### Windows
+
+1. Download either the CPU or NVIDIA installer above.
+2. Compare the file with its `.sha256` asset on the [v1.5.1 release page](https://github.com/agidesigner/chanjing-deepvideo/releases/tag/v1.5.1).
+3. Run the installer. These builds are currently unsigned; Windows may show an Unknown Publisher or SmartScreen warning.
+
+Then choose an input video and output folder, select the quality, and start processing. Preview the result in the app or choose Open Output Folder.
 
 Each run creates:
 
 - `original-name_src.mp4`: normalized source video
 - `original-name_depth.mp4`: colorized depth video
+
+## Updates
+
+The app checks this repository for newer releases. Use **Check for Updates** in the macOS application menu or Windows **Help** menu at any time. When a newer version is available, DeepVideo opens the latest GitHub Release so you can download and install it. Updates are never installed silently.
 
 For more AI video creation tools, visit [JoggAI](https://jogg.ai/?source=deepvideo).
 
